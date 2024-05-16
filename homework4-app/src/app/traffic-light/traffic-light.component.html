@@ -1,0 +1,6 @@
+<div [ngClass]="orientation">
+  <div class="bulb" [ngClass]="{ 'red': currentColor === 'red' }"></div>
+  <div class="bulb" [ngClass]="{ 'yellow': currentColor === 'yellow' }"></div>
+  <div class="bulb" [ngClass]="{ 'green': currentColor === 'green' }"></div>
+  <button class="traffic-button" (click)="increaseCounter()" [disabled]="currentColor === 'red'">Пресечи: {{walkCounter}}</button>
+</div>

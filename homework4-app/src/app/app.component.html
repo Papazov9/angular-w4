@@ -1,0 +1,23 @@
+<div class="traffic-light-container">
+  <div class="top-center">
+    <app-traffic-light
+      [orientation]="'horizontal'"
+      [inverse]="true"
+    ></app-traffic-light>
+  </div>
+  <div class="middle-left">
+    <app-traffic-light [orientation]="'vertical'"></app-traffic-light>
+  </div>
+  <div class="middle-right">
+    <app-traffic-light [orientation]="'vertical'"></app-traffic-light>
+  </div>
+  <div class="bottom-center">
+    <app-traffic-light
+      [orientation]="'horizontal'"
+      [inverse]="true"
+    ></app-traffic-light>
+  </div>
+</div>
+<div class="emergency-wrapper">
+  <button class="emergency" (click)="turnOnEmergency()" [disabled]="isEmergencyDisabled">АВАРИЯ</button>
+</div>
